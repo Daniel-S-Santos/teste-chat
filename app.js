@@ -7,7 +7,7 @@ app.use(bodyparser.json())
 app.use(bodyparser.urlencoded({extended: true}))
 app.use(cors())
 
-app.get('', function(req , res){
+app.get('/chat', function(req , res){
     res.sendFile(__dirname+ '/index.html') 
 })
 
